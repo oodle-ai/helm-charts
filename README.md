@@ -44,7 +44,7 @@ externalServices:
     writeEndpoint: '/v1/prometheus/{OODLE_INSTANCE}/write'
 EOF
 
-helm install oodle-k8s-monitoring --atomic --timeout 300s oodle/k8s-monitoring --values values.yaml
+helm install oodle-k8s-monitoring --atomic --timeout 300s oodle/k8s-monitoring --values values.yaml --namespace oodle-monitoring --create-namespace
 ```
 
 #### Doublewrite to Oodle
@@ -68,5 +68,5 @@ externalServices:
       writeEndpoint: '/v1/prometheus/{OODLE_INSTANCE}/write'
 EOF
 
-helm install oodle-k8s-monitoring --atomic --timeout 300s oodle/k8s-monitoring --values values.yaml
+helm install oodle-k8s-monitoring --atomic --timeout 300s oodle/k8s-monitoring --values values.yaml --namespace oodle-monitoring --create-namespace
 ```
