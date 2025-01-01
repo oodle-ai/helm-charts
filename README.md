@@ -52,7 +52,7 @@ helm install oodle-k8s-monitoring --atomic --timeout 300s oodle/k8s-monitoring -
 Create a `values.yaml` file
 
 ```bash
-cat >> values.yaml << EOF
+cat > values.yaml << EOF
 cluster:
   name: my-cluster
 
