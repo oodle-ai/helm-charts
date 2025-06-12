@@ -222,4 +222,57 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-auto-instrumentation-1.2.1/oodle-k8s-auto-instrumentation-1.2.1.tgz
     version: 1.2.1
-generated: "2025-06-12T06:21:52.497026629Z"
+  oodle-k8s-observability:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-06-12T16:30:09.144251698Z"
+    dependencies:
+    - alias: monitoring
+      condition: monitoring.enabled
+      name: k8s-monitoring
+      repository: https://oodle-ai.github.io/helm-charts
+      version: ^1.0.0
+    - alias: auto-instrumentation
+      condition: auto-instrumentation.enabled
+      name: oodle-k8s-auto-instrumentation
+      repository: https://oodle-ai.github.io/helm-charts
+      version: ^1.0.0
+    - alias: vector-agent
+      condition: vector-agent.enabled
+      name: vector
+      repository: https://helm.vector.dev
+      version: ^0.43.0
+    - alias: vector-aggregator
+      condition: vector-aggregator.enabled
+      name: vector
+      repository: https://helm.vector.dev
+      version: ^0.43.0
+    - alias: event-exporter
+      condition: event-exporter.enabled
+      name: kubernetes-event-exporter
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: ^3.0.0
+    description: A Helm chart for Oodle Kubernetes observability stack
+    digest: 5ff599d95d1b0d087fa7c51c09a4cdeb0a0709f7539a60eee2b1ec178c7e4ae3
+    home: https://github.com/oodle-ai/oodle-k8s-observability-helm
+    keywords:
+    - monitoring
+    - observability
+    - metrics
+    - prometheus
+    - kubernetes
+    - eBPF
+    - instrumentation
+    maintainers:
+    - name: Oodle AI
+      url: https://oodle.ai
+    name: oodle-k8s-observability
+    sources:
+    - https://github.com/oodle-ai/oodle-k8s-observability-helm
+    - https://github.com/oodle-ai/helm-charts
+    - https://github.com/oodle-ai/oodle-k8s-auto-instrumentation-helm
+    type: application
+    urls:
+    - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-1.0.1/oodle-k8s-observability-1.0.1.tgz
+    version: 1.0.1
+generated: "2025-06-12T16:30:09.144282486Z"
