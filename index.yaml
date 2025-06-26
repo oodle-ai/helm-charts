@@ -61,6 +61,23 @@ entries:
     version: 1.2.1
   oodle-k8s-auto-instrumentation:
   - apiVersion: v2
+    appVersion: 2.5.10
+    created: "2025-06-26T18:11:33.41826845Z"
+    dependencies:
+    - name: beyla
+      repository: https://grafana.github.io/helm-charts
+      version: 1.5.0
+    description: A Helm chart for auto-instrumenting Kubernetes applications with
+      eBPF.
+    digest: 2b19fa19e1ab4d056ffca6dccc2f8e89158fe8a5cb0d6ed1480ac12888e2bff4
+    name: oodle-k8s-auto-instrumentation
+    sources:
+    - https://github.com/oodle-ai/oodle-k8s-auto-instrumentation-helm/tree/main/charts/k8s-auto-instrumentation
+    type: application
+    urls:
+    - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-auto-instrumentation-1.2.11/oodle-k8s-auto-instrumentation-1.2.11.tgz
+    version: 1.2.11
+  - apiVersion: v2
     appVersion: 2.5.9
     created: "2025-06-25T18:41:41.086705276Z"
     dependencies:
@@ -468,4 +485,4 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-1.0.1/oodle-k8s-observability-1.0.1.tgz
     version: 1.0.1
-generated: "2025-06-25T19:07:33.700982666Z"
+generated: "2025-06-26T18:11:33.418326118Z"
