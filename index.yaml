@@ -394,6 +394,68 @@ entries:
     version: 1.2.1
   oodle-k8s-observability:
   - apiVersion: v2
+    appVersion: 1.0.18
+    created: "2025-11-17T13:06:37.815709067Z"
+    dependencies:
+    - alias: auto-instrumentation
+      condition: auto-instrumentation.enabled
+      name: oodle-k8s-auto-instrumentation
+      repository: https://oodle-ai.github.io/helm-charts
+      version: ^1.0.0
+    - alias: vector-agent
+      condition: vector-agent.enabled
+      name: vector
+      repository: https://helm.vector.dev
+      version: ^0.43.0
+    - alias: vector-aggregator
+      condition: vector-aggregator.enabled
+      name: vector
+      repository: https://helm.vector.dev
+      version: ^0.43.0
+    - alias: event-exporter
+      condition: event-exporter.enabled
+      name: kubernetes-event-exporter
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: ^3.0.0
+    - alias: vmagent
+      condition: vmagent.enabled
+      name: victoria-metrics-agent
+      repository: https://victoriametrics.github.io/helm-charts/
+      version: ^0.23.0
+    - alias: kube-state-metrics
+      condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ^5.0.0
+    - alias: prometheus-node-exporter
+      condition: prometheus-node-exporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ^4.0.0
+    description: A Helm chart for Oodle Kubernetes observability stack
+    digest: fb74ebce47e2cd698c84d09e42b152d98c7b04bf986e6ea70bd7bc7425574315
+    home: https://github.com/oodle-ai/oodle-k8s-observability-helm
+    keywords:
+    - monitoring
+    - observability
+    - metrics
+    - prometheus
+    - kubernetes
+    - eBPF
+    - instrumentation
+    maintainers:
+    - name: Oodle AI
+      url: https://oodle.ai
+    name: oodle-k8s-observability
+    sources:
+    - https://github.com/oodle-ai/oodle-k8s-observability-helm
+    - https://github.com/oodle-ai/helm-charts
+    - https://github.com/oodle-ai/oodle-k8s-auto-instrumentation-helm
+    type: application
+    urls:
+    - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-1.0.18/oodle-k8s-observability-1.0.18.tgz
+    version: 1.0.18
+  - apiVersion: v2
     appVersion: 1.0.17
     created: "2025-10-08T09:41:01.460537636Z"
     dependencies:
@@ -1427,4 +1489,4 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-1.0.1/oodle-k8s-observability-1.0.1.tgz
     version: 1.0.1
-generated: "2025-10-08T09:41:01.460702023Z"
+generated: "2025-11-17T13:06:37.81588752Z"
