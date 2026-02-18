@@ -59,6 +59,18 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/k8s-monitoring-1.2.1/k8s-monitoring-1.2.1.tgz
     version: 1.2.1
+  oodle-agent:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-18T21:41:50.666865072Z"
+    description: Helm chart for deploying the Oodle Agent that connects to Oodle Gateway
+      for reverse proxy capabilities.
+    digest: 6c7882bbdf82f2e058dbc5cdc5b58234ab3017ae87faf53eccfdbcc3c682e325
+    name: oodle-agent
+    type: application
+    urls:
+    - https://github.com/oodle-ai/helm-charts/releases/download/oodle-agent-0.1.0/oodle-agent-0.1.0.tgz
+    version: 0.1.0
   oodle-k8s-auto-instrumentation:
   - apiVersion: v2
     appVersion: 2.5.19
@@ -1940,4 +1952,4 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-1.0.1/oodle-k8s-observability-1.0.1.tgz
     version: 1.0.1
-generated: "2026-02-01T14:31:30.667874657Z"
+generated: "2026-02-18T21:41:50.666972563Z"
