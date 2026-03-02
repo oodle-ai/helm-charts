@@ -61,6 +61,17 @@ entries:
     version: 1.2.1
   oodle-agent:
   - apiVersion: v2
+    appVersion: 1.0.4
+    created: "2026-03-02T22:07:00.644042419Z"
+    description: Helm chart for deploying the Oodle Agent that connects to Oodle Gateway
+      for reverse proxy capabilities.
+    digest: f4532e4bbb1bcbcec23902a7a5b010177b847d5e3e3ca457839e20ba8d49c372
+    name: oodle-agent
+    type: application
+    urls:
+    - https://github.com/oodle-ai/helm-charts/releases/download/oodle-agent-0.1.4/oodle-agent-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: 1.0.1
     created: "2026-02-24T00:53:07.418966828Z"
     description: Helm chart for deploying the Oodle Agent that connects to Oodle Gateway
@@ -2025,4 +2036,4 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-1.0.1/oodle-k8s-observability-1.0.1.tgz
     version: 1.0.1
-generated: "2026-02-27T12:42:29.273684667Z"
+generated: "2026-03-02T22:07:00.64416532Z"
