@@ -2049,6 +2049,39 @@ entries:
     version: 1.0.1
   oodle-k8s-observability-fargate:
   - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2026-05-18T03:08:46.742887199Z"
+    dependencies:
+    - alias: event-exporter
+      condition: event-exporter.enabled
+      name: kubernetes-event-exporter
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: ^3.0.0
+    description: A Helm chart for Oodle Kubernetes observability on EKS Fargate
+    digest: 4ee68488514d05d2109c61d7794dc70e5d6d3620498502372fdc3a391142641a
+    home: https://github.com/oodle-ai/oodle-k8s-observability-helm
+    keywords:
+    - monitoring
+    - observability
+    - metrics
+    - traces
+    - logs
+    - kubernetes
+    - fargate
+    - eks
+    - opentelemetry
+    maintainers:
+    - name: Oodle AI
+      url: https://oodle.ai
+    name: oodle-k8s-observability-fargate
+    sources:
+    - https://github.com/oodle-ai/oodle-k8s-observability-helm
+    - https://github.com/oodle-ai/helm-charts
+    type: application
+    urls:
+    - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-fargate-0.2.1/oodle-k8s-observability-fargate-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: 0.2.0
     created: "2026-05-15T04:42:16.153461239Z"
     dependencies:
@@ -2114,4 +2147,4 @@ entries:
     urls:
     - https://github.com/oodle-ai/helm-charts/releases/download/oodle-k8s-observability-fargate-0.1.0/oodle-k8s-observability-fargate-0.1.0.tgz
     version: 0.1.0
-generated: "2026-05-15T04:42:16.153563473Z"
+generated: "2026-05-18T03:08:46.743005336Z"
